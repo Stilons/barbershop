@@ -1,0 +1,46 @@
+..icon-login, .f-copy, .f, .v-copy, .v, .📷-copy, .📷{
+	background: url(sprites.png) no-repeat;
+}
+
+..icon-login{
+	background-position: -15px -17px ;
+	width: 18px;
+	height: 16px;
+}
+
+.f-copy{
+	background-position: -118px -13px ;
+	width: 12px;
+	height: 22px;
+}
+
+.f{
+	background-position: -68px -13px ;
+	width: 12px;
+	height: 22px;
+}
+
+.v-copy{
+	background-position: -213px -16px ;
+	width: 25px;
+	height: 16px;
+}
+
+.v{
+	background-position: -163px -16px ;
+	width: 25px;
+	height: 16px;
+}
+
+.📷-copy{
+	background-position: -313px -13px ;
+	width: 21px;
+	height: 21px;
+}
+
+.📷{
+	background-position: -266px -14px ;
+	width: 21px;
+	height: 21px;
+}
+
