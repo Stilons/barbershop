@@ -2,24 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Список товаров</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic'
+        rel='stylesheet' type='text/css'>
+  <title>Главная страница</title>
 </head>
 <body>
   <header class="main-header">
-    <div class="top-menu">
-      <nav class="n-top-menu">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="top-account">
-      <a class="account-enter"  href="#">вход</a>
+    <div class="header-center clearfix">
+      <div class="top-menu">
+        <nav class="n-top-menu">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a class="active-link" href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="top-account">
+        <a class="top-account-login"  href="#">Вход</a>
+      </div>
     </div>
   </header>
   <main class="main-content">
@@ -133,22 +139,24 @@
     </div>
   </main>
   <footer class="main-footer">
-    <section class="footer-address">
-      барбершоп "бородинский"<br>
-      адрес: г. Санкт-Петербург, б.Конюшенная, д. 19/8<br>
-      <span>Как нас найти</span><br>
-      <a href="tel:+74956660266">телефон: +7 (495) 666-02-66</a>
-    </section>
-    <section class="footer-social">
-      <h3>Давайте дружить</h3>
-      <a class="social-btn social-btn-vk" href="#"></a>
-      <a class="social-btn social-btn-fb" href="#"></a>
-      <a class="social-btn social-btn-inst" href="#"></a>
-    </section>
-    <section class="footer-developers">
-      <h3>Разработано:</h3>
-      <a href="#">htmlacademy.ru</a>
-    </section>
+    <div class="footer-center clearfix">
+      <section class="footer-address">
+        барбершоп "бородинский"<br>
+        адрес: г. Санкт-Петербург, б.Конюшенная, д. 19/8<br>
+        <span><a href="#">Как нас найти?</a></span><br>
+        <a href="tel:+74956660266">телефон: +7 (495) 666-02-66</a>
+      </section>
+      <section class="footer-social">
+        <h3>Давайте дружить!</h3>
+        <a class="social-btn social-btn-vk" href="#">vk.com</a>
+        <a class="social-btn social-btn-fb" href="#">facebook.com</a>
+        <a class="social-btn social-btn-inst" href="#">instagram.com</a>
+      </section>
+      <section class="footer-developers">
+        <h3>Разработано:</h3>
+        <a class="btn" href="#">htmlacademy.ru</a>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
