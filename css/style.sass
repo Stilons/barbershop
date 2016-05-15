@@ -87,7 +87,7 @@ body
 	list-style: none
 	vertical-align: top
 
-/* Выделение пункта меню при наведении */
+/* Нижняя полоса активного пункта меню*/
 .active-link
 	position: relative
 	
@@ -114,7 +114,7 @@ body
 /* Настройка всех пунктов меню (кромен неактивного) /*
 .n-top-menu ul li a
 	display: block
-	padding: 25px 17px
+	padding: 25px 15px
 	color: #ffffff
 	line-height: 20px
 	text-decoration: none
@@ -126,7 +126,6 @@ body
 	padding-right: 20px
 	color: inherit
 	text-decoration: none
-
 .n-top-menu ul li a:hover
 	background-color: #808080
 
@@ -451,37 +450,103 @@ body
 	text-decoration: underline
 
 
-/* Информационный блок */
-.info-main-content h2
-	margin-bottom: 55px
-	font-size: 48px
-	line-height: 57.6px
+/* Первый информационный блок */
+.first-info-main-content
+	margin-bottom: 65px
+.title-info-main-content
+	margin-bottom: 60px
 	text-align: center
+
+.title-info-main-content::after
+	content: ""
+	position: relative
+	top: -31px
+	z-index: 1
+
+	display: block
+
+	border-bottom: 3px solid #000000
+
+.title-info-main-content h2
+	position: relative
+	z-index: 2
+
+	display: inline-block
+	margin: 0
+	padding: 0 27px
+	
+	font-size: 48px
+	line-height: 58px
+	text-align: center
+	background: #f7f4f1 url("../image/white_bg_repeat.jpg") repeat top center
 
 .shampoo-first-info-main-content
 	float: left
 	width: 240px
+	margin-right: 230px
+	padding-right: 10px
+
+.shampoo-first-info-main-content h3
+	margin-bottom: 28px
+	font-size: 24px
+	line-height: 29px
+
+
+/* Маркированный список */
+.list-shampoo-first-info-main-content
+	list-style: none
+
+.list-shampoo-first-info-main-content li
+	position: relative
+	padding-left: 20px
+.list-shampoo-first-info-main-content li::before
+	content: ""
+	position: absolute
+	width: 8px
+	height: 8px
+
+	left: 0
+	top: 35%
+	background-color: #000000
+	transform: rotate(45deg)
 
 .price-first-info-main-content
 	float: right
 	width: 460px
-	margin-left: 230px
-	padding-left: 10px
 
-.shampoo-first-info-main-content h3
+.price-first-info-main-content h3
+	margin-bottom: 28px
+	width: 40%
 	font-size: 24px
-	line-height: 28px
-
+	line-height: 29px
 
 /* Таблица в прайс листе */
 .table-price-first-info-main-content
+	width: 100%
 	border-collapse: collapse
 
 .table-price-first-info-main-content tr td
-	padding: 10px 110px 10px 18px
+	padding: 10px 15px
+	width: 50%
 	border: 2px solid #000000
+
 .table-price-first-info-main-content tr td:last-child
 	text-align: center
+
+
+/* Второй информационный блок */
+.barber-second-info-main-content h3
+	margin-bottom: 28px
+	font-size: 24px
+	line-height: 29px
+
+.barber-second-info-main-content p
+	float: left
+	padding-right: 10px
+	width: 380px
+.studio-second-info-main-content p
+	float: right
+	width: 460px
 /**
  *  ============================================================================
  *       #Подвал сайта
